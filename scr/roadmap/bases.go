@@ -21,7 +21,7 @@ func Base() {
 	numberPrintForCycle(10)
 
 	fmt.Println("=======================")
-	numberPrintWhileCycle(10)
+	numberPrintWhileCycle(15)
 
 	Test(1, 2, "From main.go")
 
@@ -86,9 +86,9 @@ func numberPrintForCycle(numberCycle int) {
 }
 
 func numberPrintWhileCycle(numberWhile int) {
-	for numberWhile := 1; numberWhile <= 10; {
-		fmt.Printf("(numberPrintWhileCycle) Current number is: %d \n", numberWhile)
-		numberWhile += 1
+	for number := 1; number <= numberWhile; {
+		fmt.Printf("(numberPrintWhileCycle) Current number is: %d \n", number)
+		number += 1
 	}
 }
 
