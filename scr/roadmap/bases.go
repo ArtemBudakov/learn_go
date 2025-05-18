@@ -22,6 +22,14 @@ func Base() {
 
 	fmt.Println("=======================")
 	numberPrintWhileCycle(10)
+
+	Test(1, 2, "From main.go")
+
+	testListValue := []int{101, 102, 103, 104, 105}
+	printArrayValues(testListValue)
+
+	testMapValue := map[string]int{"one": 1, "two": 2, "three": 3}
+	printMapValuesAndKeys(testMapValue)
 }
 
 func Test(one int, two int, message string) int {
@@ -71,15 +79,28 @@ func numberSwitchCase(number int) string {
 	}
 }
 
-func numberPrintForCycle(number int) {
-	for index := 1; index <= number; index++ {
+func numberPrintForCycle(numberCycle int) {
+	for index := 1; index <= numberCycle; index++ {
 		fmt.Printf("(numberPrintForCycle) Current number is: %d \n", index)
 	}
 }
 
-func numberPrintWhileCycle(number int) {
-	for number := 1; number <= 10; {
-		fmt.Printf("(numberPrintWhileCycle) Current number is: %d \n", number)
-		number += 1
+func numberPrintWhileCycle(numberWhile int) {
+	for numberWhile := 1; numberWhile <= 10; {
+		fmt.Printf("(numberPrintWhileCycle) Current number is: %d \n", numberWhile)
+		numberWhile += 1
+	}
+}
+
+func printArrayValues(list []int) {
+	for number := 0; number < len(list); number++ {
+		fmt.Printf("printArrayValues: %d \n", list[number])
+	}
+}
+
+func printMapValuesAndKeys(nestedMap map[string]int) {
+	for key, value := range nestedMap {
+		fmt.Printf("Key: %s, Value: %d\n", key, value)
+
 	}
 }
