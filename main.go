@@ -1,7 +1,11 @@
 package main
 
-import "first-go/src/roadmap"
+import (
+	"first-go/src/roadmap/stage_4"
+	"first-go/src/roadmap/stage_5"
+)
 
 func main() {
-	roadmap.Base()
+	stage_4.Base()
+	stage_5.StageFive()
 }
