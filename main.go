@@ -1,7 +1,10 @@
 package main
 
-import "roadmap"
+import (
+	"first-go/scr/codewars"
+)
 
 func main() {
-	roadmap.Base()
+	//roadmap.Base()
+	codewars.EvenOrOdd(133)
 }
